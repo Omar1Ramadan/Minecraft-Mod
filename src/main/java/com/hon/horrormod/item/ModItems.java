@@ -13,9 +13,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, HorrorMod.MOD_ID);
     public static final RegistryObject<Item> GUS_SPAWN_EGG = ITEMS.register("gus_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntityTypes.GUS, 0x22b341, 0x19732e,
-                    new Item.Properties()));
-
+            () -> new ForgeSpawnEggItem(ModEntityTypes.GUS, 0x808080, 0x19732e,
+                    new Item.Properties().tab(ModCreativeModeTab.HORROR_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

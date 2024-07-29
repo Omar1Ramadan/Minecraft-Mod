@@ -17,7 +17,7 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<GusEntity>> GUS =
             ENTITY_TYPES.register("gus",
                     () -> EntityType.Builder.of(GusEntity::new, MobCategory.MONSTER)
-                            .sized(0.4f, 1.5f)
+                            .sized(1.0f, 2.0f)
                             .build(new ResourceLocation(HorrorMod.MOD_ID, "gus").toString()));
 
     public static void register(IEventBus eventBus) {

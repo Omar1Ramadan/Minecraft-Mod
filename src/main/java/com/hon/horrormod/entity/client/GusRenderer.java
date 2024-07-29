@@ -16,7 +16,7 @@ public class GusRenderer extends GeoEntityRenderer<GusEntity> {
 
     public GusRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new GusModel());
-        this.shadowRadius = 0.6f;
+        this.shadowRadius = 1.0f;
     }
 
     @Override

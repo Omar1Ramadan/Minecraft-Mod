@@ -19,19 +19,18 @@ modId="horrormod" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version="${file.jarVersion}" #mandatory
- # A display name for the mod
+version="1.0.0" #mandatory
+# A display name for the mod
 displayName="Horror Mod" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="Gus.png" #optional
 # A text field displayed in the mod UI
-credits="Thank you for everyone involved in the creation of this project!" #optional
-# A text field displayed in the mod UI
-authors="Hamza, Omar, and Nathan" #optional
+credits="BIG Thanks to Kaupenjoe for the thorough tutorials regarding Forge Modding, and Nathan Shang for the inspiration of the 'Gus' monster sketch."
+authors="Hamza Elkababji and Omar Ramadan" #optional
 # Display Test controls the display for your mod in the server connection screen
 # MATCH_VERSION means that your mod will cause a red X if the versions on client and server differ. This is the default behaviour and should be what you choose if you have server and client elements to your mod.
 # IGNORE_SERVER_VERSION means that your mod will not cause a red X if it's present on the server but not on the client. This is what you should use if you're a server only mod.
@@ -42,25 +41,28 @@ authors="Hamza, Omar, and Nathan" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This mod is horror-themed trying to involve the hardcore ideas of Minecraft while making it fun for those that enjor horror games.
+Horror Mod is a Minecraft mod developed by two university students, introducing new monsters and unique building generation to enhance your gameplay. Encounter Gus, a unique monster guarding these naturally generated locations, adding an extra layer of excitement and danger to your adventures. Whether you're searching for hidden treasures or taking on new enemies, this Horror Mod offers a fresh experience for every player. Dive in and explore the unknown!
+
+For more information, visit our GitHub: https://github.com/Omar1Ramadan/Minecraft-Mod
 '''
+
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.horrormod]] #optional
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="[41,)" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
-    ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT or SERVER
-    side="BOTH"
+# the modid of the dependency
+modId="forge" #mandatory
+# Does this dependency have to exist - if not, ordering below must be specified
+mandatory=true #mandatory
+# The version range of the dependency
+versionRange="[41,)" #mandatory
+# An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+ordering="NONE"
+# Side this dependency is applied on - BOTH, CLIENT or SERVER
+side="BOTH"
 # Here's another dependency
 [[dependencies.horrormod]]
-    modId="minecraft"
-    mandatory=true
+modId="minecraft"
+mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.19,1.20)"
-    ordering="NONE"
-    side="BOTH"
+versionRange="[1.19,1.20)"
+ordering="NONE"
+side="BOTH"
