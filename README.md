@@ -1,2 +1,1 @@
-# Minecraft-Mod
-Minecraft Mod for the losers
+# UPDATES CURRENTLY UNDERWAY FOR THE REPOSITORY
